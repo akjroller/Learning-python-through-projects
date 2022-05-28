@@ -27,10 +27,10 @@ def binary_search(l, target, low=None, high=None):
 
 
 if __name__ == '__main__':
-    lenght = 200000
+    length = 2000
     sorted_list = set()
-    while len(sorted_list) < lenght:
-        sorted_list.add(random.randint(-1000000 * lenght, 1000000 * lenght))
+    while len(sorted_list) < length:
+        sorted_list.add(random.randint(-10000 * length, 10000 * length))
     sorted_list = sorted(list(sorted_list))
 
     start = time.time()
