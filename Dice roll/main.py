@@ -15,14 +15,11 @@ elif dice_to_roll == 'D12' or dice_to_roll == 'd12':
 elif dice_to_roll == 'D20' or dice_to_roll == 'd20':
     x = 20
 else:
-    print('invalid responce')
+    print('invalid response')
     quit()
 
 how_many_rolls = input('How many times would you like to roll?')
 
 for i in range(int(how_many_rolls)):
-    l=[]
-    l.append(random.randint(0,x))
-    print(*l)
-
-
+    lst = [random.randint(0, x)]
+    print(*lst)
